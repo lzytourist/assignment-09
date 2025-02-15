@@ -19,7 +19,7 @@
                 $('#editCar input[name="price"]').val($(this).data('price'));
             });
 
-            $('form').validate({
+            $('#addCar form').validate({
                 rules: {
                     brand: {
                         required: true
@@ -28,6 +28,9 @@
                         required: true
                     },
                     price: {
+                        required: true
+                    },
+                    year {
                         required: true
                     }
                 },
